@@ -1,36 +1,39 @@
 <!DOCTYPE html>
-<!--
- @license
- Copyright 2019 Google LLC. All Rights Reserved.
- SPDX-License-Identifier: Apache-2.0
--->
-<!-- [START maps_add_map] -->
 <html>
-  <head>
-    <title>Add Map</title>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 
-    <link rel="stylesheet" type="text/css" href="./style.css" />
-    <script type="module" src="./index.js"></script>
-  </head>
-  <body>
-    <!-- [START maps_add_map_heading] -->
-    <h3>My Google Maps Demo</h3>
-    <!-- [END maps_add_map_heading] -->
-    <!-- [START maps_add_map_div] -->
-    <!--The div element for the map -->
-    <div id="map"></div>
-    <!-- [END maps_add_map_div] -->
+<head>
+	<meta charset="utf-8">
+	<title>Customize the scroll-bar</title>
 
-    <!-- 
-     The `defer` attribute causes the callback to execute after the full HTML
-     document has been parsed. For non-blocking uses, avoiding race conditions,
-     and consistent behavior across browsers, consider loading using Promises
-     with https://www.npmjs.com/package/@googlemaps/js-api-loader.
-    -->
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
-      defer
-    ></script>
-  </body>
+	<style media="screen">
+		body {
+			background-image: linear-gradient(
+				to right, dodgerblue, darkblue);
+		}
+	</style>
+</head>
+
+<body>
+	<center>
+		<h1 style="color:lawngreen;">
+			Geeks For Geeks
+		</h1>
+		
+		<div>
+			<!-- Google Map Copied Code -->
+			<iframe src=
+"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3506.2233913121413!2d77.4051603706222!3d28.50292593193056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce626851f7009%3A0x621185133cfd1ad1!2sGeeksforGeeks!5e0!3m2!1sen!2sin!4v1585040658255!5m2!1sen!2sin"
+					width="400"
+					height="300"
+					frameborder="0"
+					style="border:0;"
+					allowfullscreen=""
+					aria-hidden="false"
+					tabindex="0">
+			</iframe>
+		</div>
+	</center>
+</body>
+
 </html>
+
